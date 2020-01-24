@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<!-- Adicionando o topo -->
+		<div  class="header_top">
+			<h3 class="title">Lista de Preços</h3>
+		</div>
+		<!-- CONTAINER -->
+		<div class="flex space_around">
+			<div class="aside_filter">
+				<div class="title_filter">
+					<h3>Filtrar</h3>
+				</div>
+				<div class="fields_filter">
+					<div class="block_fields">
+						Tipo de Pessoa
+						<label>
+							<input type="checkbox" name="" id="">
+							Pessoa Física
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							Pessoa Jurídica
+						</label>
+					</div>
+
+					<div class="block_fields">
+						Tipo de Venda
+						<label>
+							<input type="checkbox" name="" id="">
+							Venda direta
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							usado
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							Showroom
+						</label>
+					</div>
+
+					<div class="block_fields">
+						Tipo de Financiamento
+						<label>
+							<input type="checkbox" name="" id="">
+							CDC
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							CDC Flex
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							Leasing
+						</label>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Tipo de Produto</span>
+						<label>
+							<input type="checkbox" name="" id="">
+							Campanha
+						</label>
+						<label>
+							<input type="checkbox" name="" id="">
+							Net
+						</label>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Marca de veículo</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span>Modelo do veículo</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span>Versão de veículo</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+						</select>
+					</div>
+
+					<div class="block_fields">				
+						<label class="bold">
+							Ano de fabricação
+						</label>
+						<input type="number">
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Veículo especiais</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+							<option value="Táxi">Táxi</option>
+							<option value="veículo adaptado">veículo adaptado</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Estado</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Vigência Inicial</span>					
+						<input type="date" placeholder="min."> - <input type="date" placeholder="máx.">
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Período de revisão (anos)</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Período de revisão (meses)</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+							<option value="12">12</option>
+							<option value="24">24</option>
+							<option value="36">36</option>
+							<option value="48">48</option>
+							<option value="60">60</option>
+							<option value="72">72</option>
+							<option value="90">90</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<span class="bold">Período de revisão (KM)</span>					
+						<select name="" id="">
+							<option value="">Selecionar</option>
+							<option value="10.000">10.000</option>
+							<option value="20.000">20.000</option>
+							<option value="30.000">30.000</option>
+						</select>
+					</div>
+
+					<div class="block_fields">
+						<div>
+							<button class="btn btn_orange btn_big d_block">Filtrar</button>						
+						</div>
+						<div class="reset_filters">
+							<button class="text_orange">Limpar campos</button>						
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container_block">
+				<header class="header_filter flex space_between ">
+					<div>
+						<span class="d_block">Status de sistema</span>
+						<select name="" id="" multiple="true">
+							<option value="Ativo">Ativo</option>
+							<option value="Inativo">Inativo</option>
+						</select>
+					</div>
+					<div>
+						<ul class="menu_header">
+							<li><a href="javascript:;" class="text_orange"><i class="material-icons text_orange icon_align">save_alt</i>Exportar Registros</a></li>
+							<li><a href="javascript:;" class="text_orange"><i class="material-icons text_orange icon_align">save_alt</i>Importar Registros</a></li>
+							<li><a href="javascript:;" class="text_grey"><i class="material-icons icon_align">delete</i>Excluir</a></li>
+							<li><a href="javascript:;" class="text_orange"><i class="material-icons text_orange icon_align">add_circle</i>Adicionar novo</a></li>
+						</ul>
+						<a class="text_right text_orange mark_off pointer">Desmarcar todos</a>
+					</div>
+				</header>
+
+				<div class="content">
+					<div class="flex space_between">
+						<div>
+							<input type="checkbox">
+							<span class="active">Ativo</span>						
+						</div>
+						<div>
+							<ul class="flex menu_icons">
+								<li><i class="material-icons text_orange pointer">edit</i></li>
+								<li><i class="material-icons text_grey pointer icon_rotate">send</i></li>
+								<li><i class="material-icons text_grey pointer">delete</i></li>
+							</ul>						
+						</div>				
+					</div>
+					<div class="content_text">
+						<div class="mtop10">
+							<span class="bold">Serviço:</span> EGVN
+							<span class="bold">Período de revisão:</span> 2 anos | 24 meses | 30.000 KM
+						</div>
+						<div class="flex space_between mtop10">
+							<div class="space_text">
+								<span class="bold">Marca:</span> Citroen
+								<span class="bold">Modelo:</span> C4 Lounge
+								<span class="bold">Versão:</span> Executive 1.6 8V Hi-Power
+								<span class="bold">Ano de fabricação:</span> 2015
+								<span class="bold">Ano modelo:</span> 2016
+								<span class="bold">Preço:</span> R$ 877,70
+							</div>
+							<a href="javascript:;" class="text_black toggle_show">
+								Exibir Menos <i class="material-icons icon_align_keyboard_arrow">keyboard_arrow_up</i>
+							</a>
+						</div>
+						<div class="mtop10 space_text">
+							<span>Tipo de Pessoa:</span> PF
+							<span>Tipo de Venda:</span> Usado
+							<span>Tipo de Financiamento:</span> Showroom
+							<span class="bold">Início Vigência: </span> 01/04/2019
+							<span class="bold">Final Vigência: </span> 01/04/2019
+						</div>
+					</div>
+				</div>
+
+				<div class="content">
+					<div class="flex space_between">
+						<div>
+							<input type="checkbox">
+							<span class="inative">Inativo</span>						
+						</div>
+						<div>
+							<ul class="flex menu_icons">
+								<li><i class="material-icons text_orange pointer">edit</i></li>
+								<li><i class="material-icons text_grey pointer icon_rotate">send</i></li>
+								<li><i class="material-icons text_grey pointer">delete</i></li>
+							</ul>						
+						</div>				
+					</div>
+					<div class="content_text">
+						<div class="mtop10">
+							<span class="bold">Serviço:</span> EGVN
+							<span class="bold">Período de revisão:</span> 2 anos | 24 meses | 30.000 KM
+						</div>
+						<div class="flex space_between mtop10">
+							<div class="space_text">
+								<span class="bold">Marca:</span> Citroen
+								<span class="bold">Modelo:</span> C4 Lounge
+								<span class="bold">Versão:</span> Executive 1.6 8V Hi-Power
+								<span class="bold">Ano de fabricação:</span> 2015
+								<span class="bold">Ano modelo:</span> 2016
+								<span class="bold">Preço:</span> R$ 877,70
+							</div>
+							<a href="javascript:;" class="text_black toggle_show">
+								Exibir Mais <i class="material-icons icon_align_keyboard_arrow">keyboard_arrow_down</i>
+							</a>
+						</div>
+						<div class="mtop10 none">
+							<span>Tipo de Pessoa:</span> PF
+							<span>Tipo de Venda:</span> Usado
+							<span>Tipo de Financiamento:</span> Showroom
+							<span class="bold">Início Vigência: </span> 01/04/2019
+							<span class="bold">Final Vigência: </span> 01/04/2019
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
