@@ -1,0 +1,155 @@
+.aside_filter {
+  background: #f0f0f0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.title_filter {
+  border-bottom-color: #cccccc;
+  border-bottom-style: solid;
+  margin-bottom: 20px;
+}
+
+.title_filter h3 {
+  padding: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  border-bottom-color: #f87900;
+  border-bottom-style: solid;
+}
+
+.fields_filter {
+  margin-left: 20px;
+}
+
+.fields_filter label {
+  display: block;
+}
+
+.block_fields {
+  margin-bottom: 20px;
+  max-width: 303px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.block_fields select {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.block_fields span {
+  display: block;
+}
+
+.reset_filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reset_filters button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.header_filter {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container_block {
+  width: 77%;
+}
+
+.menu_header li {
+  float: left;
+  margin-left: 20px;
+}
+
+.menu_header a {
+  font-size: 14px;
+}
+
+.mark_off {
+  margin-top: 45px;
+}
+
+.icon_align {
+  transform: translate(0, 4px);
+}
+
+.icon_align_keyboard_arrow {
+  transform: translate(0, 8px);
+}
+
+.icon_rotate {
+  transform: rotate(-60deg);
+}
+
+.content {
+  background: #f0f0f0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.menu_icons li {
+  margin-left: 16px;
+}
+
+.active {
+  background: #339900;
+}
+
+.inative {
+  background: #999999;
+}
+
+.active,
+.inative {
+  display: inline-block;
+  color: #ffffff;
+  padding: 5px;
+  width: 52px;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.toggle_show {
+  font-size: 12px;
+}
+
+.space_text span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.space_text span:nth-child(1) {
+  margin-left: 0;
+}
+
+@media (max-width: 1321px) {
+  .aside_filter {
+    max-width: 100%;
+    width: 100% !important;
+  }
+  .fields_filter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+.mat-form-field-infix {
+  background-color: #ffffff !important;
+}

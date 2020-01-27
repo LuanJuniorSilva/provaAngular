@@ -1,0 +1,58 @@
+{
+	"content": [
+		{
+			"id": "1",
+			"active": "1",
+			"inputs": [],
+			"outputs":[],
+			"service":"EGVN",
+			"reviews": 
+				{
+					"reviewsYears": "2 anos",
+					"reviewsMonths": "24 meses",
+					"reviewsKM": "30.000 KM"
+				},
+			"brand": "Citroen",
+			"model": "C4 Lounge",
+			"version": "Executive 1.6 8V Hi-Power",
+			"YearManufacturing": 2015,
+			"YearModel": 2016,
+			"price": "877.70",
+			"personType": "PF",
+			"typeSales": "Usado",
+			"typeFinancing": "Showroom",
+			"startValidity": "2019-04-01",
+			"endValidity": "2019-04-01"
+		},
+		{
+			"id": "2",
+			"active": "1",
+			"inputs": [],
+			"outputs":[],
+			"service":"EGVN2",
+			"reviews": 
+				{
+					"reviewsYears": "1 ano",
+					"reviewsMonths": "24 meses",
+					"reviewsKM": "30.000 KM"
+				},
+			"brand": "Citroen",
+			"model": "C4 Lounge",
+			"version": "Executive 1.6 8V Hi-Power",
+			"YearManufacturing": 2015,
+			"YearModel": 2016,
+			"price": "877.70",
+			"personType": "PJ",
+			"typeSales": "Usado",
+			"typeFinancing": "Showroom",
+			"startValidity": "2019-04-01",
+			"endValidity": "2019-04-01"
+		}
+	],
+	"number": 8,
+	"size": 8,
+	"totalElements": 66,
+	"totalPages": 9,
+	"hasNext": true,
+	"hasPrevious": false
+}

@@ -1,0 +1,318 @@
+<app-topo></app-topo>
+<div class="flex space_around">
+  <div class="aside_filter">
+    <div class="title_filter">
+      <h3>Filtrar</h3>
+    </div>
+    <div class="fields_filter">
+      <form [formGroup]="form" (ngSubmit)="filterInputs()">
+        <div class="block_fields">
+          Tipo de Pessoa
+          <label *ngFor="let newValue of typePerson">
+            <mat-checkbox formControlName="typePerson">{{
+              newValue.label
+            }}</mat-checkbox>
+          </label>
+        </div>
+
+        <div class="block_fields">
+          Tipo de Venda
+          <label *ngFor="let newValue of typeSales">
+            <mat-checkbox formControlName="typeSales">{{
+              newValue.label
+            }}</mat-checkbox>
+          </label>
+        </div>
+
+        <div class="block_fields">
+          Tipo de Financiamento
+          <label *ngFor="let newValue of financialType">
+            <mat-checkbox formControlName="financialType">{{
+              newValue.label
+            }}</mat-checkbox>
+          </label>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Tipo de Produto</span>
+          <label *ngFor="let newValue of productType">
+            <mat-checkbox formControlName="productType">{{
+              newValue.label
+            }}</mat-checkbox>
+          </label>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Marca de veículo</span>
+          <mat-form-field>
+            <mat-select formControlName="vehicleBrand">
+              <mat-option
+                *ngFor="let newValue of vehicleBrand"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span>Modelo do veículo</span>
+          <mat-form-field>
+            <mat-select formControlName="vehicleModel">
+              <mat-option
+                *ngFor="let newValue of vehicleModel"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span>Versão de veículo</span>
+          <mat-form-field>
+            <mat-select formControlName="vehicleVersion">
+              <mat-option
+                *ngFor="let newValue of vehicleVersion"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <label class="bold">
+            Ano de fabricação
+          </label>
+          <mat-form-field class="example-full-width">
+            <input type="number" formControlName="yearFab" matInput value="" />
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Veículo especiais</span>
+          <mat-form-field>
+            <mat-select formControlName="specialVehicle">
+              <mat-option
+                *ngFor="let newValue of specialVehicle"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Estado</span>
+          <mat-form-field>
+            <mat-select formControlName="uf">
+              <mat-option *ngFor="let newValue of uf" [value]="newValue.value">
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Vigência Inicial</span>
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="vigMin"
+              [matDatepicker]="picker"
+              placeholder="min."
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          -
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="vigMax"
+              [matDatepicker]="picker2"
+              placeholder="máx."
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker2"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Período de revisão (anos)</span>
+          <mat-form-field>
+            <mat-select formControlName="yearsReview">
+              <mat-option
+                *ngFor="let newValue of yearsReview"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Período de revisão (meses)</span>
+          <mat-form-field>
+            <mat-select formControlName="monthsReview">
+              <mat-option
+                *ngFor="let newValue of monthsReview"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <span class="bold">Período de revisão (KM)</span>
+          <mat-form-field>
+            <mat-select formControlName="ReviewKM">
+              <mat-option
+                *ngFor="let newValue of ReviewKM"
+                [value]="newValue.value"
+              >
+                {{ newValue.label }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="block_fields">
+          <div>
+            <button class="btn btn_orange btn_big d_block">
+              Filtrar
+            </button>
+          </div>
+          <div class="reset_filters">
+            <a class="text_orange pointer" (click)="reset()">Limpar campos</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container_block">
+    <header class="header_filter flex space_between ">
+      <div>
+        <span class="d_block">Status de sistema</span>
+        <mat-form-field>
+          <mat-select
+            [formControl]="statusControl"
+            (selectionChange)="changeValueStatus($event)"
+            multiple
+          >
+            <mat-option
+              *ngFor="let newValue of status"
+              [value]="newValue.value"
+              >{{ newValue.label }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <ul class="menu_header">
+          <li>
+            <a href="javascript:;" class="text_orange"
+              ><i class="material-icons text_orange icon_align">save_alt</i
+              >Exportar Registros</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" class="text_orange"
+              ><i class="material-icons text_orange icon_align">save_alt</i
+              >Importar Registros</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" class="text_grey"
+              ><i class="material-icons icon_align">delete</i>Excluir</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" class="text_orange"
+              ><i class="material-icons text_orange icon_align">add_circle</i
+              >Adicionar novo</a
+            >
+          </li>
+        </ul>
+        <a class="text_right text_orange mark_off pointer">Desmarcar todos</a>
+      </div>
+    </header>
+
+    <div class="content" *ngFor="let list of lists">
+      <div class="flex space_between">
+        <div>
+          <mat-checkbox></mat-checkbox>
+          <span class="{{ list.active == 0 ? 'inative' : 'active' }}">{{
+            list.active == 0 ? "Inativo" : "Ativo"
+          }}</span>
+        </div>
+        <div>
+          <ul class="flex menu_icons">
+            <li><i class="material-icons text_orange pointer">edit</i></li>
+            <li>
+              <i class="material-icons text_grey pointer icon_rotate">send</i>
+            </li>
+            <li>
+              <i
+                class="material-icons text_grey pointer"
+                (click)="deleteItem(list.id)"
+                >delete</i
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content_text">
+        <div class="mtop10">
+          <span class="bold">Serviço:</span> {{ list.service }}
+          <span class="bold">Período de revisão:</span>
+          {{ list.reviews.reviewsYears }} | {{ list.reviews.reviewsMonths }} |
+          {{ list.reviews.reviewsKM }}
+        </div>
+        <div class="flex space_between mtop10">
+          <div class="space_text">
+            <span class="bold">Marca:</span> {{ list.brand }}
+            <span class="bold">Modelo:</span> {{ list.model }}
+            <span class="bold">Versão:</span> {{ list.version }}
+            <span class="bold">Ano de fabricação:</span>
+            {{ list.YearManufacturing }} <span class="bold">Ano modelo:</span>
+            {{ list.YearModel }} <span class="bold">Preço:</span> R$
+            {{ list.price }}
+          </div>
+          <a
+            href="javascript:;"
+            (click)="showHide(list.id)"
+            class="text_black toggle_show"
+          >
+            Exibir Menos
+            <i class="material-icons icon_align_keyboard_arrow"
+              >keyboard_arrow_up</i
+            >
+          </a>
+        </div>
+        <div class="mtop10 space_text {{ idSel }}">
+          <span>Tipo de Pessoa:</span> {{ list.personType }}
+          <span>Tipo de Venda:</span> {{ list.typeSales }}
+          <span>Tipo de Financiamento:</span> {{ list.typeFinancing }}
+          <span class="bold">Início Vigência: </span> {{ list.startValidity }}
+          <span class="bold">Final Vigência: </span> {{ list.endValidity }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background: #fafafa;
+  box-sizing: border-box !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.d_block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.btn_big {
+  display: block !important;
+  width: 100%;
+}
+
+.btn_orange {
+  background: #f87900;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_orange:hover {
+  background: darkorange;
+}
+
+.text_orange {
+  color: #f87900;
+}
+
+.text_grey {
+  color: #cccccc;
+}
+
+.text_black {
+  color: #000000;
+}
+
+.text_right {
+  display: block;
+  text-align: right;
+}
+
+.mtop10 {
+  margin-top: 10px;
+}
+
+material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.space_around {
+  justify-content: space-around;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
